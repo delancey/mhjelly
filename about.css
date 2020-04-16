@@ -1,0 +1,23 @@
+/* 
+RED = #ff5c5c
+Blue = #161e67
+White = #ffffff */
+
+* {
+    font-family: 'Montserrat', sans-serif;   
+}
+
+h1 {
+    font-weight: 800;
+    background-color:#ff5c5c;
+    color: white;
+    height: 200px;
+}
+
+h2, h3, h4 {
+    font-weight: 600;
+}
+
+p{
+    font-weight: 400;
+}
