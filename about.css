@@ -9,7 +9,7 @@ White = #ffffff */
 
 h1 {
     font-weight: 800;
-    background-color:#ff5c5c;
+   
     color: white;
     height: 200px;
 }
@@ -20,4 +20,66 @@ h2, h3, h4 {
 
 p{
     font-weight: 400;
+}
+
+.about {
+    display: flex;
+    flex-direction: column;
+    margin: 50px 0;
+    background-color:#ff5c5c;
+}
+.about h1{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.about h3, .about p {
+    margin-left: 50px;
+    color: white;
+}
+
+/* .container {
+margin: 0 auto;
+} */
+
+.row {
+    display: flex;
+    justify-content: center;;
+}
+
+.allCards{
+    
+}
+.card { 
+    /* display: flex; */
+    /* align-items: center; */
+    background-color:#161e67;
+    margin: 10px;
+    padding: 10px;
+        
+}
+
+.card h5, .card p {
+    color: white;
+}
+
+.heroImage {
+    margin-top: 40px;
+}
+
+/* adjust dimensions*/
+
+img{
+    display: block;
+    margin: 0 auto;
+    height: auto;
+    width: 1000px;
+}
+
+/* style contact form*/
+
+footer {
+    background-color: #161e67;
+    height: 200px;
 }
