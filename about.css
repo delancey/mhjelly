@@ -7,19 +7,13 @@ White = #ffffff */
     font-family: 'Montserrat', sans-serif;   
 }
 
-h1 {
-    font-weight: 800;
-   
-    color: white;
-    height: 200px;
-}
-
 h2, h3, h4 {
     font-weight: 600;
 }
 
 p{
     font-weight: 400;
+    font-size: 17px;
 }
 
 .about {
@@ -27,21 +21,23 @@ p{
     flex-direction: column;
     margin: 50px 0;
     background-color:#ff5c5c;
+    height: 300px;
 }
 .about h1{
     display: flex;
     justify-content: center;
     align-items: center;
 }
-
-.about h3, .about p {
-    margin-left: 50px;
+h1 {
+    font-weight: 800;
     color: white;
+    height: 150px;
 }
 
-/* .container {
-margin: 0 auto;
-} */
+.about h3, .about p {
+    color: white;
+    text-align: center;
+}
 
 .row {
     display: flex;
@@ -49,15 +45,12 @@ margin: 0 auto;
 }
 
 .allCards{
-    
+    margin-bottom: 50px;
 }
 .card { 
-    /* display: flex; */
-    /* align-items: center; */
     background-color:#161e67;
-    margin: 10px;
+    margin: 10px 10px 50px 10px;
     padding: 10px;
-        
 }
 
 .card h5, .card p {
@@ -65,21 +58,327 @@ margin: 0 auto;
 }
 
 .heroImage {
+    display: flex;
+    align-items: center;
+    position: relative;
     margin-top: 40px;
+    background-color: cyan;
 }
 
-/* adjust dimensions*/
+.heroImage:before {
+    content:"";
+    background-color: #161e67;
+    position: absolute;
+    height: 120%;
+    width: 200vw;
+    left: -100vw;
+    z-index: -1;
+}
 
-img{
-    display: block;
-    margin: 0 auto;
+.responsive{
+    width: 100%;
     height: auto;
-    width: 1000px;
+}
+
+.contact {
+    margin: 50px 0;
 }
 
 /* style contact form*/
+form{
+    width: 400px;
+	/* border-top: 20px solid #161e67; */
+	margin-top: 100px;
+	padding-top: 80px;
+}
 
+fieldset{
+	border: none;
+    	padding: 0;
+    	margin: 0; 
+  }
+
+label[for^="nam"]{
+	margin-top: 15px;
+}
+
+legend{
+  	color: #ff5c5c;
+	font-size: 18px;
+	font-weight: bold;
+  	padding-top: 0;
+}
+
+
+/*form contact style 320*/
+#contact{
+	padding-bottom: 25px;
+}
+
+textarea:focus, 
+input:focus, 
+input[type]:focus,  
+.uneditable-input:focus {   
+    	border-color: #2d3945;
+    	box-shadow: none;
+    	outline: none;
+	caret-color: #2d3945;
+	background-color: #d5efed;	
+}
+
+input:active, 
+option:active{
+	box-shadow: none;
+	border: 2px solid #2d3945;   
+	border-radius: .5em;
+}
+
+input[type="text"],
+input[type="tel"],
+input[type="email"],
+textarea{
+    	border: none;
+	background-color:#eff0f1;
+	width: 260px;
+	height: 45px;
+	padding-left: 20px;
+	margin: 10px auto 32px auto;	 
+}
+
+::placeholder{
+    	font-style: italic;
+	text-align: right;
+	padding-right: 10px;
+    	color: #a8adb2;    
+}
+
+#phone::placeholder,
+#address::placeholder,
+#city::placeholder,#zip::placeholder{
+	text-align: left;
+}
+
+select{
+	margin-bottom: 2em;
+	margin-top: 10px;
+	width: 280px;
+	height: 45px;
+	background-color:#eff0f1;
+	color: #a8adb2;
+	font-size: 12px;
+}
+select:focus{
+	box-shadow: none;
+	border: 2px solid #2d3945;
+	border-radius: .5em;
+	outline:none;
+	background-color: #d5efed;
+}
+
+#zip{
+	width: 50%;
+	display:block;
+	margin-left: 0;
+}
+
+
+
+/*footer style */
 footer {
     background-color: #161e67;
     height: 200px;
 }
+
+
+/*general form style 320*/
+
+form{
+    margin: 0 auto;
+    width: 280px;
+	border-top: 2px solid #2D3945;
+	margin-top: 4px;
+	padding-top: 24px;
+}
+
+fieldset{
+	border: none;
+    	padding: 0;
+    	margin: 0; 
+  }
+
+label[for^="nam"]{
+	margin-top: 15px;
+}
+legend{
+  	color: #3b4650;
+	font-size: 36px;
+	font-weight: bold;
+    padding-top: 0;
+    text-transform: uppercase;  
+}
+/*end general form style 320*/
+
+/*form contact style 320*/
+#contact{
+	padding-bottom: 25px;
+}
+
+textarea:focus, 
+input:focus, 
+input[type]:focus,  
+.uneditable-input:focus {   
+    	border-color: #2d3945;
+    	box-shadow: none;
+    	outline: none;
+	caret-color: #2d3945;
+	background-color: #d5efed;	
+}
+
+input:active, 
+option:active{
+	box-shadow: none;
+	border: 2px solid #2d3945;   
+	border-radius: .5em;
+}
+
+input[type="text"],
+input[type="tel"],
+input[type="email"],
+textarea{
+    	border: none;
+	background-color:#eff0f1;
+	width: 260px;
+	height: 45px;
+	padding-left: 20px;
+	margin: 10px auto 32px auto;	 
+}
+
+::placeholder{
+    	font-style: italic;
+	text-align: right;
+	padding-right: 10px;
+    	color: #a8adb2;    
+}
+
+#phone::placeholder,
+#address::placeholder,
+#city::placeholder,#zip::placeholder,#state::placeholder{
+	text-align: left;
+}
+
+select{
+	margin-bottom: 2em;
+	margin-top: 10px;
+	width: 280px;
+	height: 45px;
+	background-color:#eff0f1;
+	color: #a8adb2;
+	font-size: 12px;
+}
+select:focus{
+	box-shadow: none;
+	border: 2px solid #2d3945;
+	border-radius: .5em;
+	outline:none;
+	background-color: #d5efed;
+}
+
+#zip{
+	width: 50%;
+	display:block;
+	margin-left: 0;
+}
+
+/*end form contact style 320*/
+
+
+button{
+	background-color: #161e67;
+	color: white;
+	font-size: 20px;
+	height: 55px;
+	width: 100%;
+	border-radius: .2em;
+}
+
+button:hover{
+	transition-duration: 1s;
+	background-color: #ff5c5c;
+}
+
+#copyright{
+	color: #9da3a8;
+	font-style: italic;
+	font-weight: 300;
+	margin-top:20px;
+}
+
+
+/*---------	Desktop Form Style   -----------*/
+
+@media screen and (min-width: 768px) {
+ 		
+/*  all form style 768*/
+	.container{
+		width: 750px;
+		margin: 0 auto;
+	}
+/*	end all form style 768*/
+  
+  
+	form{
+		width: auto;
+		margin: 0 16px;
+	}
+/*  contact style 768*/
+	label{
+		width: 120px;
+		display: inline-block;
+		padding-right:15px;
+    
+	}
+	#contact{
+		padding-top: 20px;
+	}
+  
+	input[type="text"],
+    	input[type="tel"],
+    	input[type="email"],
+	textarea{
+		width:555px;
+		padding-left: 20px;
+	}
+	
+	input[checkbox]:focus,
+    	input[radio]:focus{
+		width:inherit;
+		padding-left: 20px;
+	}
+	
+	select{
+		width: 579px;
+	}
+
+	
+	#zip{
+		width: 25%;
+		display:inline-block;
+	}
+	 
+	.solid{
+		width: 718px;
+	}
+	
+	label[for^="commen"]{
+		width: auto;
+	}
+	
+	textarea[name^="commen"]{
+		height: 100px;
+		width: 97%;
+	}
+}
+
+/*  end contact style 768*/
+
+/*  border in nav is from form - find and remove.
