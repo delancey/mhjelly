@@ -45,11 +45,13 @@ p{
 }
 /* ------story-------------- */
 .story {
-    display: flex;
-    flex-direction: column;
-    margin: 50px 0;
-   
+    /* display: flex;
+	flex-direction: column; */
+	align-content: center;;
+	margin: 50px auto;
+	width: 75%;
 }
+
 .story h2{
     color: #161e67;
     margin: 50px;
@@ -57,7 +59,7 @@ p{
 
 .story p{
     color: #161e67;
-    margin: 10px 50px;
+	margin: 10px 50px;
 }
 
 .row {
@@ -66,8 +68,8 @@ p{
 }
 
 .rule {
-    border: 2px #161e67 solid;
-   width:75%;
+    border: 1px #161e67 solid;
+   width:50%;
    margin: 75px auto;
 }
 
@@ -88,7 +90,7 @@ p{
 
 
 
-.card h5, .card p {
+.card h3, .card p {
     color: #ff5c5c;
 }
 
